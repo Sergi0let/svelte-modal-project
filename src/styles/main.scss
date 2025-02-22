@@ -1,0 +1,50 @@
+@use '_reset';
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100, 700, 900;1,14..32,100..900&display=swap');
+:root {
+	--txt-gray: #e9eaf4;
+	--txt-gray-dark: #9293a3;
+	--txt-selected: #3b9eff;
+
+	--bg-dark: #181818;
+	--bg-gray: #202028;
+	--bg-white: #ffffff;
+	--bg-btn-hover: #2c2c2c;
+
+	--bg-gradient: linear-gradient(to bottom, #e30077, #9d0052);
+	--bg-modal-decor: linear-gradient(to right, #d62381, #1288f9);
+
+	--radius-btn: 0.75rem;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+	white-space: nowrap;
+}
+.bg-glass {
+	color: var(--txt-gray);
+	border-radius: 54px;
+	background: rgba(10, 10, 11, 0.4);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(8.9px);
+	-webkit-backdrop-filter: blur(8.9px);
+}
+.open-store-btn {
+	padding: 12px 24px;
+	font-size: 16px;
+	background: var(--txt-selected);
+	color: white;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+}
